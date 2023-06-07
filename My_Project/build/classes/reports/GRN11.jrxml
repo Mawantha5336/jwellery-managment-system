@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.19.1.final using JasperReports Library version 6.19.1-867c00bf88cd4d784d404379d6c05e1b419e8a4c  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="GRN11" pageWidth="500" pageHeight="800" columnWidth="460" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="5d60c909-5d47-4a15-91cb-04089906ba57">
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="COLUMN_0" class="java.lang.String"/>
+	<field name="COLUMN_1" class="java.lang.String"/>
+	<field name="COLUMN_2" class="java.lang.String"/>
+	<field name="COLUMN_3" class="java.lang.String"/>
+	<field name="COLUMN_4" class="java.lang.String"/>
+	<field name="COLUMN_5" class="java.lang.String"/>
+	<field name="COLUMN_6" class="java.lang.String"/>
+	<field name="COLUMN_7" class="java.lang.String"/>
+	<field name="COLUMN_8" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="760" splitType="Stretch">
+			<image>
+				<reportElement x="-20" y="-20" width="490" height="780" uuid="da50bc1b-267d-4f6c-b72a-65fcaa448101"/>
+				<imageExpression><![CDATA["C:/Users/DELL/Downloads/Presentation111.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="-10" y="230" width="80" height="30" uuid="c23b1ef9-0a86-49ba-bc98-fb29c8ebecf9"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Jwellery Name :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="130" y="230" width="60" height="30" uuid="8e193225-acfd-42a4-a54e-3d626bf77836"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Category :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="190" y="230" width="50" height="30" uuid="06613bf2-e4a3-42b8-bd82-10712c82928a"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Quantity :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="70" y="230" width="60" height="30" uuid="39d6879b-c4e7-42b9-bddf-93097da89a1a"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Caret No :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="240" y="230" width="70" height="30" uuid="9d78e309-d3b2-4e03-b75d-e3bb09c33618"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Buying Price :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="310" y="230" width="70" height="30" uuid="29d26b73-e3f7-41ee-8b5a-ebb247e408f6"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="380" y="230" width="80" height="30" uuid="0b7e0eac-853c-4876-a2d7-4029f9e1e453"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total Payment :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="-10" y="260" width="80" height="30" uuid="f11b7017-3e30-4800-b6c1-5a760bcd3df4"/>
+				<textFieldExpression><![CDATA[$F{COLUMN_3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="70" y="260" width="60" height="30" uuid="8c4f4251-e354-4063-b6be-ba446fb27800"/>
+				<textFieldExpression><![CDATA[$F{COLUMN_2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="130" y="260" width="60" height="30" uuid="4b09a26c-c6a8-4642-af82-22d3145b09f9"/>
+				<textFieldExpression><![CDATA[$F{COLUMN_0}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="190" y="260" width="50" height="30" uuid="22ad54cc-fdf3-4bb4-af2c-f7f8240958c4"/>
+				<textFieldExpression><![CDATA[$F{COLUMN_4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="240" y="260" width="70" height="30" uuid="c100e939-2e85-4dd6-aadd-a82e966516c7"/>
+				<textFieldExpression><![CDATA[$F{COLUMN_5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="310" y="260" width="70" height="30" uuid="4a2acde2-05a2-49f3-b0e4-9b29303cf29e"/>
+				<textFieldExpression><![CDATA[$F{COLUMN_8}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="380" y="260" width="80" height="30" uuid="17a30bff-1022-46ac-b429-0de4e0747f30"/>
+				<textFieldExpression><![CDATA[$F{COLUMN_8}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

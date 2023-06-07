@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.19.1.final using JasperReports Library version 6.19.1-867c00bf88cd4d784d404379d6c05e1b419e8a4c  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Invoice14" pageWidth="700" pageHeight="1000" columnWidth="660" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="978487c3-535c-4fcb-9640-9a421efccfd3">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="Parameter1" class="java.lang.String"/>
+	<parameter name="Parameter2" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="COLUMN_0" class="java.lang.String"/>
+	<field name="COLUMN_1" class="java.lang.String"/>
+	<field name="COLUMN_2" class="java.lang.String"/>
+	<field name="COLUMN_3" class="java.lang.String"/>
+	<field name="COLUMN_4" class="java.lang.String"/>
+	<field name="COLUMN_5" class="java.lang.String"/>
+	<field name="COLUMN_6" class="java.lang.String"/>
+	<field name="COLUMN_7" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="958" splitType="Stretch">
+			<image>
+				<reportElement x="-11" y="0" width="671" height="958" uuid="1467ec50-d9a5-4fa2-9773-6bfa04a59780"/>
+				<imageExpression><![CDATA["C:/Users/DELL/Downloads/Presentation110.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="100" y="340" width="90" height="30" uuid="79395e4e-cc8c-4792-ac2b-593d4625f189"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Caret No :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="190" y="340" width="100" height="30" uuid="4f001dff-11d7-46b8-9927-f4adc45d07f8"/>
+				<textElement>
+					<font size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Jwellery Name :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="290" y="340" width="90" height="30" uuid="6b8d1d9b-cb00-409e-bf90-fd5f9728d159"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Quantity :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="380" y="340" width="90" height="30" uuid="cc4edf62-d34f-4a40-9e8b-50a5d871b51c"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Selling Price :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="340" width="100" height="30" uuid="8eb22072-9906-4e6b-9a60-594636bf04a0"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Pirches Date :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="470" y="340" width="90" height="30" uuid="d8842423-e904-4517-a4ef-d72a0f317611"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="560" y="340" width="90" height="30" uuid="7c24d8bf-fb03-43c3-bd92-2df6500a473c"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Payment :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="100" y="370" width="90" height="30" uuid="e383cb7e-4f42-4367-96c0-60ef5c2d21f1"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{COLUMN_2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="190" y="370" width="100" height="30" uuid="fa9902ec-f961-48c6-9b55-c9d3346adb55"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{COLUMN_3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="290" y="370" width="90" height="30" uuid="6977c5d7-d121-4eeb-a456-eabd3d17f167"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{COLUMN_4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="380" y="370" width="90" height="30" uuid="20be27d7-0fb7-4acf-96fd-3846e40c5125"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{COLUMN_5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="370" width="100" height="30" uuid="97a4d2af-eea9-42cd-b95f-94f7c06d6662"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{COLUMN_6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="470" y="370" width="90" height="30" uuid="98bcf019-9c8a-4f55-b3df-3ae79365023b"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{COLUMN_7}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="370" width="90" height="30" uuid="cb850e28-7492-4751-99c8-2d8edc6ddb6f"/>
+				<textFieldExpression><![CDATA[$F{COLUMN_7}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

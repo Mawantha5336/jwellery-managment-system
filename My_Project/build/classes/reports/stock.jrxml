@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.19.1.final using JasperReports Library version 6.19.1-867c00bf88cd4d784d404379d6c05e1b419e8a4c  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="stock" pageWidth="700" pageHeight="842" columnWidth="660" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="e96c0925-56d9-4112-86a0-d700fd8a54fb">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="COLUMN_0" class="java.lang.String"/>
+	<field name="COLUMN_2" class="java.lang.String"/>
+	<field name="COLUMN_3" class="java.lang.String"/>
+	<field name="COLUMN_4" class="java.lang.String"/>
+	<field name="COLUMN_5" class="java.lang.String"/>
+	<field name="COLUMN_6" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="139" splitType="Stretch">
+			<staticText>
+				<reportElement x="30" y="20" width="120" height="50" forecolor="#2B94F0" uuid="d5f7658a-610c-41d0-9ebc-083c4eb68921"/>
+				<textElement>
+					<font fontName="Edwardian Script ITC" size="42" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Golden]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="90" y="60" width="100" height="30" uuid="b5693424-64db-431a-96b3-cbcbf11124a7"/>
+				<textElement>
+					<font fontName="Freestyle Script" size="25" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Jewellery]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="294" y="79" width="100" height="41" forecolor="#ED2724" uuid="6909b45c-dee9-4ed8-aaa6-daba291b49b3"/>
+				<textElement>
+					<font fontName="Algerian" size="25" isBold="true"/>
+				</textElement>
+				<text><![CDATA[STOCK]]></text>
+			</staticText>
+			<image>
+				<reportElement x="500" y="0" width="120" height="130" uuid="2c1f1cd4-c6e9-458d-8166-e545af83bb90"/>
+				<imageExpression><![CDATA["C:/Users/DELL/Downloads/jewelry-logo-design-template-cir.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="33" splitType="Stretch">
+			<staticText>
+				<reportElement x="30" y="0" width="100" height="30" uuid="b5699050-43d0-48f2-bdd9-08d6cd11f175"/>
+				<textElement>
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Stock Id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="130" y="0" width="100" height="30" uuid="6a8c29a7-9656-4e36-9d48-8db52a761cfa"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Category]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="230" y="0" width="100" height="30" uuid="3e2d2266-4d20-49d2-8635-fe9118d75e23"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Jwelery Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="330" y="0" width="100" height="30" uuid="217fc499-b68f-4324-a621-a1118d758643"/>
+				<textElement>
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Caret No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="430" y="0" width="100" height="30" uuid="d2dd89b3-f382-483c-914e-be30998cbc10"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Quantity]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="530" y="0" width="100" height="30" uuid="1269f0be-6d84-4732-ab1e-d71166a0d84f"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Buying Price]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="33" splitType="Stretch">
+			<textField>
+				<reportElement x="30" y="0" width="100" height="30" uuid="a534d5e4-fe46-4830-aa3f-34b04c2e398c">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b1bd12fc-1442-4c72-aa01-7d652a78dacc"/>
+				</reportElement>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{COLUMN_0}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="130" y="0" width="100" height="30" uuid="2a1c16a2-4083-4899-9c66-86cf23c4152d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3e78df0a-a065-4a09-bc38-6065227aaf5e"/>
+				</reportElement>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{COLUMN_2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="230" y="0" width="100" height="30" uuid="a6b2bd89-9a9b-497e-bdbf-20b499fc7d70">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4509fbaf-d963-48aa-942f-bd5af925b96a"/>
+				</reportElement>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{COLUMN_3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="330" y="0" width="100" height="30" uuid="cf1f0b1b-3acc-434b-a79b-f337848fcea4">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f9172d38-4071-40f1-be9c-b3a27bd66de3"/>
+				</reportElement>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{COLUMN_4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="430" y="0" width="100" height="30" uuid="6393faef-6200-4e1c-8c01-81f04dedc7a9">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5ea17050-4df9-4764-bcc7-3249abf1fa00"/>
+				</reportElement>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{COLUMN_5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="530" y="0" width="100" height="30" uuid="89fea01f-0d7e-4ebc-bff7-8f2bef26e056">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5dad58de-bbd4-410a-9bd4-2b94d3a7f8ea"/>
+				</reportElement>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{COLUMN_6}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
